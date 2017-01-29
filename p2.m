@@ -1,4 +1,7 @@
 function [err, CONF] = p2(C, T)
+% determine confusion matrix and error give a classification labels and the
+% true labels
+
 maxC = max(C);
 maxT = max(T);
 
@@ -15,6 +18,8 @@ for x = 1:size(C, 1)
    CONF(index) = CONF(index) + 1;
 end
 
-err = sum(diag(CONF)) / sum(CONF(:));
+correct = sum(diag(CONF));
+total = sum(CONF(:));
+err = (total - correct) / total;
 end
 

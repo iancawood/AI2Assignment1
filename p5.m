@@ -1,5 +1,5 @@
 function w = p5(X_train, Y_train, iterNum)
-% tune the weights
+% tune the weights by randomly generating weights
 
 oldErr = 1;
 

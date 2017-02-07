@@ -1,5 +1,6 @@
 function C = p3(X_train, Y_train, X_test, k)
-% classify X_test samples using K nearest neighborss
+% classify X_test samples using K nearest neighbors, trained by X_train and
+% Y_train
 
 numTrainSamples = size(X_train, 1);
 numTestSamples = size(X_test, 1);

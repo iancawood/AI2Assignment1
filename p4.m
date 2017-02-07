@@ -1,4 +1,7 @@
 function C = p4(w, X)
+% Multiply a matrix of weights w by a matrix of samples W to calculate a
+% vector of classifications C
+
  C = X * w(2:end, :) + w(1, :);
  
  for i = 1:size(C, 1)

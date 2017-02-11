@@ -11,6 +11,6 @@ function C = p4(w, X)
          C(i) = 2;
      else
          C(i) = randi(2);
-     end         
+end         
 end
 
